@@ -1,0 +1,46 @@
+<main>
+	<div id="profile" class="main center">
+
+    <section class="profile-main ">
+			<div class="content">
+					<div class="bg-pic">
+						<img src="{{backPic}}" alt="">
+					</div>
+
+					<div class="profile-pic">
+						<img src="{{proPic}}" alt="">
+					</div>
+
+					<div class="profile-status">
+						<h4>
+							{{#if proName}}
+								{{proName}}
+							{{else}}
+								 Default Name
+							{{/if}}
+						</h4>
+
+						<p>
+							{{#if proStatus}}
+								{{proStatus}}
+							{{else}}
+								This is a default status update
+							{{/if}}
+						</p>
+					</div>
+				 <div class="profile-stats">
+					 <ul>
+						 {{#each stats}}
+								<li><b>{{@key}}</b>: {{this}} </li>
+						 {{else}}
+								<li><i>No Information</i><li>
+						 {{/each}}
+					 </ul>
+				 </div>
+				 <a class="btn btn-default" href="/users/update/{{locations}}">Update</a>
+				 <a class="btn btn-default" href="/users/delete/{{locations}}">Delete</a>
+			</div><!-- content -->
+
+    </section>
+	</div>
+</main>

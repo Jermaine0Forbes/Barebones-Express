@@ -1,0 +1,32 @@
+<main>
+	<div id="users" class="main center">
+
+    <section class="users-main ">
+			<div class="content">
+
+				{{#if user}}
+					<div class="">
+						<a class="username" href="/profile/{{this._id}}" >
+							<h3>{{this.name}}</h3>
+						</a>
+						<ul>
+							<li>Age: {{this.age}}</li>
+							<li>Sex: {{this.sex}}</li>
+							<li>Race: {{this.race}}</li>
+							<li>Occupation: {{this.occupation}}</li>
+						</ul>
+						<p>{{this.status}}</p>
+
+
+					</div>
+				{{else}}
+						<p>There is no user information provided</p>
+				{{/if}}
+				<form  method="post">
+					<input type="submit" class="btn btn-default" value="Delete User">
+				</form>
+			</div><!-- content -->
+
+    </section>
+	</div>
+</main>

@@ -1,0 +1,77 @@
+<main>
+	<div id="profile" class="main center">
+
+    <section class="profile-main ">
+			<div class="content">
+				<form class="form-horizontal"  method="POST">
+					<input type="hidden" name="_method" value="PUT">
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="name">Name:</label>
+						<input class=" col-sm-4" type="text" name="name" value="{{name}}">
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="status">Status:</label><br>
+						<textarea  class=" col-sm-4" name="status"  cols="40" >{{status}}</textarea>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="age">Age:</label>
+						<input class=" col-sm-4" type="number" name="age" value="{{age}}">
+					</div>
+
+					<div class="form-group">
+						<label  class="control-label col-sm-2" for="race">Race:</label>
+						<select class=" col-sm-4" name="race">
+							<option disabled="true"  >-- select --</option>
+							<option {{#ifCon race "black" "BLACK"}}selected="true" {{/ifCon}} value="black">Black</option>
+							<option {{#ifCon race "white" "WHITE"}}selected="true" {{/ifCon}} value="white">White</option>
+							<option  {{#ifCon race "asian" "ASIAN"}}selected="true" {{/ifCon}} value="asian">Asian</option>
+							<option {{#ifCon race "indian" "INDIAN"}}selected="true" {{/ifCon}} value="indian">Indian</option>
+							<option {{#ifCon race "mixed" "MIXED"}}selected="true" {{/ifCon}} value="mixed">Mixed</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="sex">Sex:</label>
+
+						<select class=" col-sm-4" name="sex">
+							<option disabled="true" selected="true" >-- select --</option>
+							<option {{#ifCon sex "male" "MALE"}}selected="true" {{/ifCon}} value="male">Male</option>
+							<option {{#ifCon sex "female" "FEMALE"}}selected="true" {{/ifCon}} value="female">Female</option>
+						</select>
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="music">Music:</label>
+						<input class=" col-sm-4" type="text" name="music" value="{{music}}">
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="occupation">Occupation:</label>
+						<input class=" col-sm-4" type="text" name="occupation" value="{{occ}}">
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="country">Country:</label>
+						<input class=" col-sm-4" type="text" name="country" value="{{country}}">
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="enemy">Enemies:</label>
+						<input class=" col-sm-4" type="number" name="enemy" value="{{enemy}}">
+					</div>
+
+					<div class="form-group">
+						<label class="control-label col-sm-2" for="friend">Friends:</label>
+						<input class=" col-sm-4" type="number" name="friend" value="{{friend}}">
+					</div>
+
+					<input class="btn btn-default" type="submit" name="_method" value="update">
+
+				</form>
+			</div><!-- content -->
+
+    </section>
+	</div>
+</main>

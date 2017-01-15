@@ -1,0 +1,30 @@
+<main>
+	<div id="users" class="main center">
+
+    <section class="users-main ">
+			<div class="content">
+				<div class="container">
+
+					{{#each users as |value key|}}
+					<div class="users col-sm-4">
+						<a class="username" href="/profile/{{this._id}}" >
+							<h3>{{this.name}}</h3>
+						</a>
+						<ul>
+							<li>Age: {{this.age}}</li>
+							<li>Sex: {{this.sex}}</li>
+							<li>Race: {{this.race}}</li>
+							<li>Occupation: {{this.occupation}}</li>
+						</ul>
+						<p>{{this.status}}</p>
+
+
+					</div>
+					{{/each}}
+				</div>
+
+			</div><!-- content -->
+
+    </section>
+	</div>
+</main>

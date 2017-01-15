@@ -1,5 +1,5 @@
 {
-  "name": "9-23-16",
+  "name": "barebones-express",
   "version": "1.0.0",
   "description": "Practice",
   "main": "app.js",
@@ -10,11 +10,18 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
     "ejs": "^2.5.2",
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
     "gulp": "^3.9.1",
     "handlebars": "^4.0.5",
+    "mongoose": "^4.7.6",
     "nodemon": "^1.10.2"
+  },
+  "devDependencies": {
+    "bower": "^1.8.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.0.0"
   }
 }

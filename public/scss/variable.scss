@@ -1,0 +1,72 @@
+$grey: #ccc;
+$wht: white;
+$base: grey;
+$bSize: 18px;
+$number:(1,2,3,4,5,6,7,8,9,10);
+
+
+@mixin marginW(  $left:auto, $right:auto){
+	margin-left: $left;
+	margin-right: $right;
+}
+
+@mixin marginV(  $top:auto, $bottom:auto){
+	margin-top: $top;
+	margin-bottom: $bottom;
+}
+
+@mixin dimension($h:100%, $w:100%){
+
+	height:$h;
+	width:$w;
+
+}
+
+.col{
+	display:flex;
+	width:100%;
+	
+
+}
+
+@each $column in $number{
+
+	.col#{$column}{
+		width:10%*($column);
+		display:inline-block;
+		float:left;
+		
+		
+	}
+}
+
+.cancel{
+	display:flex;
+	&:after{
+
+	content: "."; 
+	visibility: hidden; 
+	display: block; 
+	height: 0; 
+	clear: both;
+	}
+
+}
+
+
+@each $margin in $number{
+
+	.mar#{$margin}{
+		margin-right:10%*($margin);
+	}
+
+}
+
+.marhalf{
+	margin-right:10%*(0.5);
+}
+
+.mar4th{
+	margin-right:10%*(0.25);
+}
+

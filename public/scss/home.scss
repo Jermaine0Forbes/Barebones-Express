@@ -1,0 +1,112 @@
+.panel-body.content .bg{
+  height:150px;
+}
+
+
+.bg-pic{
+	width:100%;
+	height:150px;
+	background:$grey;
+}
+
+
+
+/*==========================
+
+profile
+
+===========================*/
+
+.pic{
+	border-radius:50%;
+	border: 3px solid $base;
+	background:$grey;
+	margin:auto;
+
+}
+
+
+.profile-pic{
+	height:100px;
+	width:100px;
+	@extend .pic;
+	margin-top:-50px;
+	
+}
+
+.profile-status{
+	width:100%;
+	margin:auto;
+	text-align:center;
+}
+
+/*==========================
+
+status
+
+===========================*/
+
+.status{
+
+	input{
+		width:70%;
+	
+	}
+
+}
+
+.status-pic{
+	@extend .pic;
+	@include dimension(60px,60px);
+	
+	
+	
+}
+
+/*==========================
+
+friends
+
+===========================*/
+
+.friends .update {
+
+	border-bottom: 1px solid $grey;
+	
+	&:last-of-type{
+	
+		border-style:none;
+	}
+}
+
+/*==========================
+
+relationships
+
+===========================*/
+
+.relationships{
+
+	width:60%;
+	margin:auto;
+	div{
+		width:48%;
+		text-align:center;
+		display:inline-block;
+		
+		&:first-of-type{
+			border-right:1px solid $grey;
+		
+		}
+	}
+	
+	a{
+		color:grey;
+		&:hover{
+			text-decoration:underline;
+		
+		}
+	
+	}
+
+}

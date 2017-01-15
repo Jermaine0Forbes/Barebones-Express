@@ -1,0 +1,255 @@
+/*==========================
+
+username
+
+===========================*/
+
+.username {
+	color:black;
+	&:hover{
+	
+		color:grey;
+	}
+}
+
+.bg{
+background:$base;
+
+}
+
+
+
+/*==========================
+
+foot-icons
+
+===========================*/
+
+.foot-icons{
+ font-size:30px;
+
+}
+
+/*==========================
+
+header
+
+===========================*/
+
+header{
+  background:$base;
+  color:$wht;
+  min-height:70px;
+  display:flex;
+  a{
+	color:$wht;
+  }
+}
+
+header > div{
+	align-content:stretch;
+	display:flex;
+	align-items:center;
+	
+}
+
+div{
+
+	box-sizing:border-box;
+
+}
+
+/*==========================
+
+nav
+
+===========================*/
+
+.search-bar{
+	width:80%;
+	border-radius:5px;
+
+}
+
+/*==========================
+
+body
+
+===========================*/
+
+body{
+  background:$grey;
+}
+
+:root,body{
+	
+	font-size:$bSize; 
+
+}
+
+
+/*==========================
+
+a
+
+===========================*/
+a{
+
+	color:$wht;
+	&:hover{
+		text-decoration:none;
+		color:$wht;
+	}
+}
+
+h1,h2,h3,h4,h5{
+
+	font-weight:bold;
+
+}
+
+/*==========================
+
+.users
+
+===========================*/
+
+.users{
+
+  @include marginV(1em,3em);
+
+}
+
+
+/*==========================
+
+.center
+
+===========================*/
+
+.center{
+	max-width:1575px;
+	width:100%;
+	min-width:320px;
+	margin:auto;
+
+}
+
+/*==========================
+
+.content 
+
+===========================*/
+
+.content li
+{
+	text-transform:capitalize;
+
+}
+
+/*==========================
+
+.home
+
+===========================*/
+
+
+.home section{
+  
+  min-height:500px;
+  margin:1em 0;
+  
+}
+
+section .content{
+background:$wht;
+padding:10px 15px;
+margin-top: 1em;
+	&:first-of-type{
+		margin-top:0;
+	
+	}
+
+
+}
+  
+
+.home .status{
+  //@include marginW(4.1%,4.1%);
+} 
+
+
+
+
+/*==========================
+
+main
+
+===========================*/
+
+main{
+
+	@include marginV(1em, 1em);
+}
+
+
+
+/*==========================
+
+.profile
+
+===========================*/
+
+.profile-main{
+	
+
+}
+
+
+.profile-main .profile-pic{
+
+width:200px;
+height:200px;
+margin-top:-100px;
+
+}
+
+.profile-main .bg-pic{
+ height:270px;
+}
+
+.profile-main .profile-status{
+
+	border-bottom: 1px solid $grey;
+}
+
+.profile-stats{
+	@include marginV(1em);
+	
+	ul{
+		list-style:none;
+	
+	}
+
+}
+
+/*==========================
+
+footer
+
+===========================*/
+
+footer{
+  background:$base;
+  color:$wht;
+}
+
+#footer{
+  text-align:center;
+  text-transform:capitalize;
+  min-height:70px;
+  @include marginV(2em,2em);
+}
+
+
+
