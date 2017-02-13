@@ -1,0 +1,67 @@
+
+/*======Base======*/
+
+
+/*___body___ */
+
+:root,
+body
+{ 
+	font-size:18px; 
+	transition:font-size 400ms;
+}
+
+html, 
+body
+{ 
+	height: 100vh;
+}
+
+
+/*___inherit___*/
+
+.inherit
+{
+
+	height:inherit;
+}
+
+
+/*___headers___*/
+
+.h1,h1
+{ 
+	font-size:2.6rem;
+}
+
+.h2,h2
+{ 
+	font-size:2.2rem; 
+}
+
+.h3,h3
+{ 
+	font-size:1.7rem; 
+}
+
+.h4,h4
+{ 
+	font-size:1.4rem; 
+}
+
+.h5,h5
+{ 
+	font-size:1rem; 
+}
+
+.h6,h6
+{ 
+	font-size:0.6rem; 
+}
+
+
+
+
+
+
+

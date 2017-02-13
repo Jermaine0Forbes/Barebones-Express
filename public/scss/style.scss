@@ -1,0 +1,61 @@
+/*======================================
+
+Style
+
+=======================================*/
+
+
+/*___Elements___*/
+
+body{ background:$secondary; }
+
+.content{ background: $primary; }
+
+h1,
+h2,
+h3,
+h4
+{
+	font-family:'Slabo 27px', serif;
+}
+
+
+footer{
+	background:$primary;
+	text-align:center;
+	min-height:5em;
+
+}
+
+header{
+
+	background:$primary;
+	min-height:5em;
+
+}
+
+
+/*___profile___*/
+
+.profile-mid
+{
+	border-top:$secondary 1px solid;
+}
+
+
+.img-box
+{
+	background:$secondary;
+	height:16em;
+	width:100%;
+	overflow:hidden;
+}
+
+#logo
+{
+	margin:0;
+	padding:18px 0;
+	a{
+		color:black;
+	}
+}

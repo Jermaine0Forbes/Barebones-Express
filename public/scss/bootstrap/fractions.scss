@@ -1,0 +1,134 @@
+/*======Fractions======*/
+
+
+@each $i in $fra{
+		.#{$i}{
+		
+		display:inline-block;
+		float:left;
+		transition:all 0.3s;
+		}
+		
+		.#{$i}:after{ 
+		display:table;
+		content:"";
+		clear:both;
+	  }
+	}
+
+.half{
+	width:50%;
+
+}
+
+.third{
+	width:33.33%;
+}
+
+.fourth{
+	width:25%;
+
+}
+
+.fifth{
+	width:20%;
+}
+
+.sixth{
+	width:16.66%;
+
+}
+
+.three-fourth{
+	width:75%;
+}
+
+.two-third{
+	width:66.66%;
+}
+
+@media (max-width:1536px){
+
+.#{$name} .sixth{
+	width:25%;
+}
+
+.#{$name} .sixth.set:nth-of-type(2n-1){
+	margin-left:25%;
+
+}
+
+}
+
+
+@media (max-width:1280px){
+
+.#{$name} .sixth{
+	width:33%;
+}
+.#{$name} .sixth.set:nth-of-type(2n-1){
+	margin-left:0;
+
+}
+
+.#{$name} .fifth{
+	width:33.33%;
+}
+
+.#{$name} .fifth.set:nth-of-type(2n){
+	margin-left:16.66%;
+
+}
+
+.#{$name} .fourth{
+	width: 50%;
+}
+
+}
+
+
+@media (max-width:1024px){
+
+.#{$name} .fifth.set:nth-of-type(2n){
+	margin-left:0%;
+
+}
+
+.#{$name} .third.set:nth-of-type(2n){
+	margin-left:25%;
+
+}
+
+@each $i in $fra{
+		
+		.#{$name} .#{$i}{
+		
+		 width:50%;
+		}
+	}
+}
+
+
+@media (max-width:768px){
+
+.#{$name} .third.set:nth-of-type(2n){
+	margin-left:0;
+
+}
+
+	@each $i in $fra{
+		.#{$i},
+		.#{$name} .#{$i}{
+		
+		 width:100%;
+		}
+	}
+}
+
+@media (max-width:512px){
+
+.#{$name} .fourth{
+
+}
+
+}

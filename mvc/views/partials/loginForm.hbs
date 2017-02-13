@@ -1,0 +1,53 @@
+<form id="login-form" class="col-sm-6 col-sm-offset-3" method="post">
+  <!-- {{#if signup}}post{{else}}get{{/if}} -->
+  <div class="error-messages">
+    {{#if error}}
+      <ul>
+        {{#each error}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    {{/if}}
+  </div>
+
+    <div class="input-block pad-half padV">
+      <span class="required fourth input-subject pad-half padH">username: </span>
+      <input class="with-6" type="text" name="username" value="">
+    </div>
+    <div class="input-block pad-half padV">
+      <span class=" required fourth input-subject pad-half padH">password: </span>
+      <input class="with-6" type="password" name="password" value="">
+    </div>
+    {{#if signup}}
+      <div class="input-block pad-half padV">
+          <span class="fourth input-subject pad-half padH">first name: </span>
+          <input class="with-6" type="text" name="firstName" value="">
+      </div>
+      <div class="input-block pad-half padV">
+        <span class="fourth input-subject pad-half padH">last name: </span>
+        <input class="with-6" type="text" name="lastName" value="">
+      </div>
+      <div class="input-block pad-half padV">
+        <span class="required fourth input-subject pad-half padH">email: </span>
+        <input class="with-6" type="email" name="email" value="">
+      </div>
+      <div class="input-block pad-half padV">
+        <span class="fourth input-subject pad-half padH">race: </span>
+        <select class="with-6" name="race">
+          <option disabled="true "selected="true">-- Race --</option>
+          <option value="white">White</option>
+          <option value="black">Black</option>
+          <option value="asian">Asian</option>
+          <option value="indian">Indian</option>
+          <option value="mixed">Mixed</option>
+        </select>
+      </div>
+      <div class="input-block pad-half padV">
+        <span class="fourth input-subject pad-half padH">nation: </span>
+        {{> loginNation}}
+      </div>
+    {{/if}}
+    <div class="input-block pad-half padV">
+      <input class="btn btn-default with-2" type="submit" name="submit" value="submit">
+    </div>
+</form>

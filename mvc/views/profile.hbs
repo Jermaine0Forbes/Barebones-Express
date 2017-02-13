@@ -1,0 +1,58 @@
+<section class =" container inherit">
+ <div class="row inherit">
+
+
+	 <div class="with pad-half  inherit">
+     <div class="content pad">
+
+       <div class="profile-top row">
+         <div class="fourth">
+           {{#if profilePicture}}
+              <img  class="with" src="{{profilePicture}}" alt="profile account">
+            {{else}}
+              <img  class="with-8 center" src="http://www.efoza.com/postpic/2012/07/linkedin-blank-profile_5279.jpg" alt="profile account">
+            {{/if}}
+         </div>
+         <div class="three-fourth">
+           {{#if username}}
+            <h2>{{username}}</h2>
+           {{else}}
+            <h2>default username</h2>
+           {{/if}}
+         </div>
+       </div>
+
+       <div class="profile-mid row">
+         <div class="row">
+           <h2>
+             Check out
+             {{#if username}}
+                {{username}}
+             {{else}}
+                default
+             {{/if}}
+             's recent pictures
+           </h2>
+         </div>
+       </div>
+
+       <div class="row">
+         {{> imgCollection}}
+       </div>
+
+       {{#if images}}
+        <ul>
+          {{#each images}}
+            <li>{{this.name}}</li>
+          {{/each}}
+        </ul>
+
+       {{/if}}
+		</div>
+	 </div>
+
+
+
+
+ </div>
+</section>

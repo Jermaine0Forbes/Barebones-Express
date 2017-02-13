@@ -1,0 +1,25 @@
+
+* Learn how to upload files
+* Learn how to send files to a directory
+* Create a schema for images
+  * options should be
+    * path to where it is located
+    * name of pictures
+    * timestamp
+    * love
+    * hate
+    * favorite
+    * maybe size of image?
+* Create option for each user to upload a file
+  * add mongoose functionality to save file, and retrieve them
+* Create option for each user to delete file
+* Create functionality to retrieve all img files so that it can be display on the
+  home page
+* Create lightbox to view img and also include comment box
+* Create love and icons on image that will save the data
+* Create separate admin page that you can log into
+* Add and delete users with admin
+
+Document
+* how to create login
+* 

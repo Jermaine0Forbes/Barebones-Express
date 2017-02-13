@@ -1,0 +1,16 @@
+<div  id="img-collection">
+  {{#each images}}
+     <div class="fourth pad-3rd">
+       <a href="/imgCollection/{{this.name}}">
+         <div class="img-box">
+           <img class="hite" src="/imgCollection/{{this.name}}" alt="{{this.name}}">
+         </div>
+       </a>
+     </div>
+  {{else}}
+    <div class="fourth pad-3rd">
+      <div class="img-box">
+      </div>
+    </div>
+  {{/each}}
+</div>

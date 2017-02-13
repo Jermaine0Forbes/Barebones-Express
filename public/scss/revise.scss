@@ -1,0 +1,111 @@
+/*======================================
+
+Revise
+
+=======================================*/
+
+/*___nav-search___*/
+
+.form-input{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding:0 1em;
+}
+
+form input
+{
+  @extend .form-input;
+}
+
+form select
+{
+  @extend .form-input;
+}
+
+#nav-search{
+  input[type="search"]{
+    @extend .form-input;
+    min-height: 34px;
+  }
+
+  button,
+  .btn,
+  input[type="submit"]
+  {
+    border-radius: 2px 5px 5px 2px;
+  }
+}
+
+.search{
+  button,
+  .btn,
+  input[type="submit"]{
+    position:relative;
+    top:-1px;
+    right:15px;
+  }
+}
+
+.input-block
+{
+  display:block;
+}
+
+@include catch-float(".input-block");
+
+.input-subject
+{
+  text-align:right;
+}
+
+
+.required:before
+{
+    content: "* ";
+    color:red;
+}
+
+.error-messages
+{
+  color:red;
+  li{
+    list-style:none;
+  }
+}
+
+.submenu
+{
+  position:relative;
+}
+
+.submenu:hover > ul
+{
+  display:block;
+  transition:all 0.3s;
+
+}
+
+.submenu > ul
+{
+  display:none;
+  position:absolute;
+  z-index:5;
+  left:0;
+  min-width:100px;
+  width:100%;
+  padding:0;
+}
+
+.submenu > ul  li
+{
+
+  background:$secondary;
+  list-style:none;
+  text-align:center;
+}
+
+.submenu > ul  li a
+{
+  display:block;
+  padding:0.5em;
+}

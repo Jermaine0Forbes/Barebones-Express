@@ -1,0 +1,12 @@
+
+$primary: white;
+$secondary: #ccc;
+$tertiary: grey;
+
+@mixin catch-float($selector){
+  #{$selector}:after{
+    display:block;
+    content:"";
+    clear:both;
+  }
+}

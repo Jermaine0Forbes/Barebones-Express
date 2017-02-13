@@ -1,0 +1,21 @@
+<section class =" container inherit">
+ <div class="row ">
+
+
+	 <div class="with pad-half  ">
+     <div class="content  pad">
+       <h2 class="center">All Accounts</h2>
+       <div class="row">
+         {{#each users}}
+           <div class="half">
+             <h3><a href="/account/admin/{{this.username}}">{{this.username}}</a>  </h3>
+             <h5>{{this.password}}</h5>
+           </div>
+         {{/each}}
+       </div>
+
+		</div>
+	 </div>
+
+ </div>
+</section>

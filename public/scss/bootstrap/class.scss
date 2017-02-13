@@ -1,0 +1,84 @@
+/*======Class======*/
+
+
+/*___row___*/
+
+.row
+{
+	margin:1em 0;
+}
+
+
+/*___center___*/
+
+.center
+{
+	text-align:center;
+}
+
+
+/*___list-inline___*/
+
+.list-inline{
+	 margin:0;
+	 align-content:stretch;
+	li{
+	  padding:0;
+	  
+	  a{
+		display:block;
+	  
+	  }
+	}
+
+
+}
+
+.list-inline.spaced{
+	display:flex;
+	align-items:center;
+	justify-content:space-around;
+
+}
+
+/*___container___ */
+
+.container
+{ 
+	padding:0; 
+	max-width:1200px; 
+	width:100%;
+}
+
+.container.wide
+{
+	max-width:1400px;
+}
+
+.container.wider
+{
+	max-width:1600px;
+}
+
+.container-fluid
+{
+	padding:0;
+}
+
+/*___padding___*/
+
+.no-pad{ padding:0; }
+
+.pad{padding:1em;}
+
+.pad-3-4th{ padding:0.75em; }
+
+.pad-half{padding:0.5em;}
+
+.pad-3rd{ padding:0.33em; }
+
+.pad-4th{padding:0.25em;}
+
+.padH{ padding-top:0; padding-bottom:0;}
+
+.padV{ padding-left:0; padding-right:0;}

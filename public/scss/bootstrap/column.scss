@@ -1,0 +1,50 @@
+
+/*======Column======*/
+
+/*___height columns___*/
+
+@each $i in $ten {
+
+	.hite-#{$i}{height: 10% * $i;}
+
+
+}
+
+.hite
+{
+	height:100%;
+}
+
+
+/*___width columns___*/
+
+
+@each $i in $ten {
+
+	.with-#{$i}{width: 10% * $i;}
+
+
+}
+
+.with
+{
+	width:100%
+}
+
+
+/*___columns___*/
+
+
+.col{ display:flex; width:100%;}
+
+@for $col from 1 through 12{
+	.col-xs-#{$col}{ padding:0;}	
+	
+	.col-sm-#{$col}{ padding:0;}
+	
+	.col-md-#{$col}{ padding:0;}
+	
+	.col-lg-#{$col}{ padding:0;}
+	
+
+}

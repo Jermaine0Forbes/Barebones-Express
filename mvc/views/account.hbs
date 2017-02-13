@@ -1,0 +1,70 @@
+<section class =" container inherit">
+ <div class="row inherit">
+
+
+	 <div class="with pad-half  inherit">
+     <div class="content pad">
+
+       <div class="row">
+         <div class="fourth">
+           {{#if profilePicture}}
+              <img  class="with" src="{{profilePicture}}" alt="profile account">
+            {{else}}
+              <img  class="with-8 center" src="http://www.efoza.com/postpic/2012/07/linkedin-blank-profile_5279.jpg" alt="profile account">
+            {{/if}}
+         </div>
+         <div class="three-fourth">
+           {{#if username}}
+            <h2>{{username}}</h2>
+           {{else}}
+            <h2>default username</h2>
+           {{/if}}
+         </div>
+       </div>
+
+       <div class="row">
+         <div class="half">
+           <label >Name:</label>
+           {{#if firstName}}
+            <span class="pad-half padV">{{firstName}} {{lastName}}</span>
+           {{else}}
+            <span class="pad-half padV"> John Doe</span>
+           {{/if}}
+         </div>
+         <div class="half">
+           <label>Email:</label>
+           {{#if email}}
+            <span class="pad-half padV">{{email}}</span>
+           {{else}}
+            <span class="pad-half padV"><a href="#">john@example.com</a></span>
+           {{/if}}
+         </div>
+       </div>
+
+       <div class="row">
+         <div class="half">
+           <label >Race:</label>
+           {{#if race}}
+            <span class="pad-half padV">{{race}}</span>
+           {{else}}
+            <span class="pad-half padV">Unknown</span>
+           {{/if}}
+         </div>
+         <div class="half">
+           <label >Nationality:</label>
+           {{#if nation}}
+            <span class="pad-half padV">{{nation}}</span>
+           {{else}}
+            <span class="pad-half padV">Unknown</span>
+           {{/if}}
+         </div>
+       </div>
+
+		</div>
+	 </div>
+
+
+
+
+ </div>
+</section>
