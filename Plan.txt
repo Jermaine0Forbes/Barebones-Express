@@ -1,0 +1,22 @@
+Site name: Hotel finder
+
+data: a collection of hotels around america
+
+site inspiration: https://www.templatemonster.com/demo/58970.html
+
+- hotel schema
+  -hotel name
+  -state
+  -city
+  -address
+  -star hotel
+  -rating
+
+- people schema
+  -name
+  - rating:schema
+
+- rating schema
+  -name of hotel
+  -rating
+  -review

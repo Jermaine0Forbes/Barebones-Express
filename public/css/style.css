@@ -1,0 +1,33 @@
+body {
+  background: white;
+  color: #4d4d4d; }
+
+a {
+  transition: all 0.3s; }
+  a:hover {
+    text-decoration: none;
+    color: black; }
+
+#top-nav {
+  background: black;
+  color: white;
+  text-transform: capitalize; }
+  #top-nav a {
+    color: white; }
+
+h1 {
+  text-transform: capitalize;
+  text-align: center;
+  margin: 0; }
+  h1 .top {
+    font-family: "Oswald", sans-serif;
+    color: black; }
+  h1 .bottom {
+    font-family: "Lora", serif;
+    font-size: 0.5em;
+    display: block;
+    margin-top: 0; }
+
+nav a {
+  color: #4d4d4d;
+  text-transform: capitalize; }

@@ -1,0 +1,54 @@
+body
+{
+  background:$primary;
+  color:$text;
+}
+a
+{
+  transition:all 0.3s;
+  &:hover{
+    text-decoration:none;
+    color:$tertiary;
+  }
+}
+
+#top-nav
+{
+  background:$tertiary;
+  color:$primary;
+  text-transform:capitalize;
+  a{
+    color:$primary;
+  }
+}
+
+
+
+
+h1{
+   text-transform:capitalize;
+   text-align:center;
+   margin:0;
+  .top
+  {
+    font-family:$oswald;
+    color:$tertiary;
+  }
+
+  .bottom
+  {
+    font-family:$lora;
+    font-size:0.5em;
+    display:block;
+    margin-top:0;
+  }
+
+}
+
+nav
+{
+  a{
+    color:$text;
+    text-transform:capitalize;
+  }
+}
