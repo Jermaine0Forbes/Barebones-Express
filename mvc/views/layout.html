@@ -17,14 +17,14 @@
             {% if title %}
                 {{title}}
             {% else %}
-                {% set title = "Eco" %}
+                {% set title = "Default" %}
                 {{ title }}
             {% endif %}
         </title>
     </head>
     <body>
         {% include "header.html" %}
-        <main id="{{id}}">
+        <main >
             {% block main %}
             {% endblock %}
         </main>
