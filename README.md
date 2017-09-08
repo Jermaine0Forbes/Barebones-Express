@@ -1,11 +1,4 @@
-# SeaLife
-
-## Build Tools
-- Webpack
-
-
-## Server-scripting Language
-- Node.js
+# Blank Nunjucks Template
 
 ## Template Engine
 - Nunjucks
