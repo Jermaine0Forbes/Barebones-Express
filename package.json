@@ -16,14 +16,11 @@
     "cookie-parser": "^1.4.3",
     "debug": "^2.6.3",
     "express": "^4.15.2",
-    "gulp": "^3.9.1",
     "nunjucks": "^3.0.1"
   },
   "devDependencies": {
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^2.1.2",
-    "gulp-autoprefixer": "^4.0.0",
-    "gulp-sass": "^3.1.0",
     "sass-loader": "^6.0.6",
     "webpack": "^3.0.0",
     "webpack-dev-server": "^2.5.0"
